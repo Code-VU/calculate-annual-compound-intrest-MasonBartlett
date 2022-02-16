@@ -3,7 +3,6 @@ def calculateCompoundInterest():
 # This first 3 lines are provided for yougetACompoundIntrest()
 # This first 3 lines are provided for you
     count = 0
-    divider = '---'
     while count < 3 :
         client_one_principal = float(input("Principle (amount): "))
         client_one_time =      float(input("Time:               "))
@@ -14,7 +13,7 @@ def calculateCompoundInterest():
         intrest = round(amount - client_one_principal, 2)
 
         print ('Compound Interest: '+str(intrest))
-        print(divider)
+        print('---')
         count = count + 1
 
 
