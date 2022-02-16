@@ -11,9 +11,9 @@ def calculateCompoundInterest():
 
         amount = client_one_principal * (1 + (client_one_rate / 100))**client_one_time
 
-        ci = round(amount - client_one_principal, 2)
+        intrest = round(amount - client_one_principal, 2)
 
-        print ('Compound Interest: ', ci)
+        print ('Compound Interest:', intrest)
         print(divider)
         count = count + 1
 
