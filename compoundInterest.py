@@ -13,7 +13,7 @@ def calculateCompoundInterest():
 
         ci = round(amount - client_one_principal, 2)
 
-        print (ci)
+        print ('Compound Interest:  ', ci)
         print(divider)
         count = count + 1
 
