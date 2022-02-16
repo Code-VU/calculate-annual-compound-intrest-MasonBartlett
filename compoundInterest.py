@@ -2,9 +2,24 @@ def calculateCompoundInterest():
     
 # This first 3 lines are provided for yougetACompoundIntrest()
 # This first 3 lines are provided for you
- client_one_principal = float(input("Principle (amount): "))
- client_one_time =      float(input("Time:               "))
- client_one_rate =      float(input("Rate:               "))
+    count = 0
+    divider = '----'
+    while count < 3 :
+        client_one_principal = float(input("Principle (amount): "))
+        client_one_time =      float(input("Time:               "))
+        client_one_rate =      float(input("Rate:               "))
+
+        amount = client_one_principal * (1 + (client_one_rate / 100))**client_one_time
+
+        ci = round(amount - client_one_principal, 2)
+
+        print (ci)
+        print(divider)
+        count = count + 1
+
+
+
+
  #print("Compound Interest: "+str(intrest))
 
     # end assignment
@@ -14,4 +29,4 @@ def calculateCompoundInterest():
 ## ***IMPORTANT*** please recomment before you submit/sync your assignment.
 ## OR YOUR TEST WILL NOT RUN
 
-#calculateCompoundInterest()
+calculateCompoundInterest()
